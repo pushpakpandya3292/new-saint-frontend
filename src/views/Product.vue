@@ -923,7 +923,9 @@ export default {
   mounted() {
     $(window).scroll(function () {
       var scrollPosition = $(window).scrollTop();
-      var ptvsdetailboxsecond = $(".ptvs-detail-box-five").offset().top;
+      var ptvsdetailboxsecond = $(
+        ".ptvs-detail-box-five .ptvs-detail-box-inner"
+      ).offset().top;
       if (scrollPosition >= ptvsdetailboxsecond) {
         $(".product-top-video-section").addClass("scroll-finish");
       } else {
@@ -998,12 +1000,12 @@ export default {
         $(".ptvs-detail-video-five").addClass("d-none");
       }
     });
-
     $(window).scroll(function () {
       var scrollPosition = $(window).scrollTop();
-      var usecasesdetailone = $(".product-page .use-cases-detail-one").offset()
-        .top;
-      if (scrollPosition >= usecasesdetailone) {
+      var usecasessectioninner = $(
+        ".product-page .use-cases-section-inner"
+      ).offset().top;
+      if (scrollPosition >= usecasessectioninner) {
         $(".use-cases-detail-image-one").removeClass("d-none");
       } else {
         // $(".use-cases-detail-image-one").addClass("d-none");
@@ -1011,27 +1013,50 @@ export default {
     });
     $(window).scroll(function () {
       var scrollPosition = $(window).scrollTop();
-      var secasesdetailtwo = $(".product-page .use-cases-detail-two").offset()
+      var usecasesdetailone = $(".product-page .use-cases-detail-one").offset()
         .top;
-      if (scrollPosition >= secasesdetailtwo) {
+      if (scrollPosition >= usecasesdetailone) {
         $(".use-cases-detail-image-one").addClass("d-none");
         $(".use-cases-detail-image-two").removeClass("d-none");
       } else {
         $(".use-cases-detail-image-two").addClass("d-none");
+        $(".use-cases-detail-image-one").removeClass("d-none");
       }
     });
     $(window).scroll(function () {
       var scrollPosition = $(window).scrollTop();
-      var usecasesdetailthree = $(
-        ".product-page .use-cases-detail-three"
-      ).offset().top;
-      if (scrollPosition >= usecasesdetailthree) {
+      var secasesdetailtwo = $(".product-page .use-cases-detail-two").offset()
+        .top;
+      if (scrollPosition >= secasesdetailtwo) {
         $(".use-cases-detail-image-two").addClass("d-none");
         $(".use-cases-detail-image-three").removeClass("d-none");
       } else {
         $(".use-cases-detail-image-three").addClass("d-none");
       }
     });
+
+    this.$nextTick(function () {
+      setTimeout(function () {
+        var hash = "#" + window.location.hash.substring(1);
+        const data = $(hash);
+        console.log("data", data);
+        $("html, body").animate({
+          scrollTop: $(data).position().top,
+        });
+      }, 100);
+    });
+    // $(window).scroll(function () {
+    //   var scrollPosition = $(window).scrollTop();
+    //   var usecasesdetailthree = $(
+    //     ".product-page .use-cases-detail-three"
+    //   ).offset().top;
+    //   if (scrollPosition >= usecasesdetailthree) {
+    //     $(".use-cases-detail-image-two").addClass("d-none");
+    //     $(".use-cases-detail-image-three").removeClass("d-none");
+    //   } else {
+    //     $(".use-cases-detail-image-three").addClass("d-none");
+    //   }
+    // });
   },
 };
 </script>

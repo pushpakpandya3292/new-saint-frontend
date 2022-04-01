@@ -482,6 +482,17 @@ export default {
       $(".commercial-nav").addClass("active-nav");
       $(".technical-nav").removeClass("active-nav");
     });
+
+    this.$nextTick(function () {
+      setTimeout(function () {
+        var hash = "#" + window.location.hash.substring(1);
+        const data = $(hash);
+        console.log("data", data);
+        $("html, body").animate({
+          scrollTop: $(data).position().top,
+        });
+      }, 100);
+    });
   },
 };
 </script>

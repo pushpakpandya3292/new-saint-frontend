@@ -229,6 +229,17 @@ export default {
     Header,
     Footer,
   },
-  mounted() {},
+  mounted() {
+    this.$nextTick(function () {
+      setTimeout(function () {
+        var hash = "#" + window.location.hash.substring(1);
+        const data = $(hash);
+        console.log("data", data);
+        $("html, body").animate({
+          scrollTop: $(data).position().top,
+        });
+      }, 100);
+    });
+  },
 };
 </script>

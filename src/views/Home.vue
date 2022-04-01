@@ -310,9 +310,88 @@
         <div class="use-cases-right d-none d-lg-block">
           <div class="use-cases-right-inner">
             <div class="use-cases-video">
-              <div style="padding: 56.25% 0 0 0; position: relative">
+              <!-- <div
+                class="use-cases-video-one"
+                style="padding: 56.25% 0 0 0; position: relative"
+              >
                 <iframe
                   src="https://player.vimeo.com/video/567184792?h=75af3df1bc&autoplay=1&loop=1&title=0&byline=0&portrait=0&muted=1"
+                  style="
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                  "
+                  muted
+                  frameborder="0"
+                  allow="autoplay; fullscreen; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div> -->
+              <div
+                class="use-cases-video-one"
+                style="padding: 56.25% 0 0 0; position: relative"
+              >
+                <iframe
+                  src="https://player.vimeo.com/video/567184792?h=75af3df1bc&autoplay=1&loop=1&title=0&byline=0&portrait=0&muted=1"
+                  style="
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                  "
+                  muted
+                  frameborder="0"
+                  allow="autoplay; fullscreen; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <div
+                class="use-cases-video-two d-none"
+                style="padding: 56.25% 0 0 0; position: relative"
+              >
+                <iframe
+                  src="https://player.vimeo.com/video/691344944?h=51d2dea424&autoplay=1&loop=1&title=0&byline=0&portrait=0&muted=1"
+                  style="
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                  "
+                  muted
+                  frameborder="0"
+                  allow="autoplay; fullscreen; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <div
+                class="use-cases-video-three d-none"
+                style="padding: 56.25% 0 0 0; position: relative"
+              >
+                <iframe
+                  src="https://player.vimeo.com/video/691347158?h=fadc7a41d0&autoplay=1&loop=1&title=0&byline=0&portrait=0&muted=1"
+                  style="
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                  "
+                  muted
+                  frameborder="0"
+                  allow="autoplay; fullscreen; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              <div
+                class="use-cases-video-four d-none"
+                style="padding: 56.25% 0 0 0; position: relative"
+              >
+                <iframe
+                  src="https://player.vimeo.com/video/691440025?h=dbcbf05828&autoplay=1&loop=1&title=0&byline=0&portrait=0&muted=1"
                   style="
                     position: absolute;
                     top: 0;
@@ -451,43 +530,50 @@ export default {
     });
     $(window).scroll(function () {
       var scrollPosition = $(window).scrollTop();
-      var usecasesdetailone = $(".use-cases-detail-one").offset().top;
+      var usecasesdetailone = $(
+        ".use-cases-detail-one .use-cases-detail-inner"
+      ).offset().top;
       if (scrollPosition >= usecasesdetailone) {
-        $(".use-cases-video iframe").attr(
-          "src",
-          "https://player.vimeo.com/video/567184792?h=75af3df1bc&autoplay=1&loop=1&title=0&byline=0&portrait=0"
-        );
+        $(".use-cases-video-two").removeClass("d-none");
+        $(".use-cases-video-one").addClass("d-none");
+      } else {
+        $(".use-cases-video-two").addClass("d-none");
+        $(".use-cases-video-one").removeClass("d-none");
       }
     });
     $(window).scroll(function () {
       var scrollPosition = $(window).scrollTop();
-      var usecasesdetailtwo = $(".use-cases-detail-two").offset().top;
+      var usecasesdetailtwo = $(
+        ".use-cases-detail-two .use-cases-detail-inner"
+      ).offset().top;
       if (scrollPosition >= usecasesdetailtwo) {
-        $(".use-cases-video iframe").attr(
-          "src",
-          "https://player.vimeo.com/video/691344944?h=51d2dea424&autoplay=1&loop=1&title=0&byline=0&portrait=0"
-        );
+        $(".use-cases-video-three").removeClass("d-none");
+        $(".use-cases-video-two").addClass("d-none");
+      } else {
+        $(".use-cases-video-three").addClass("d-none");
       }
     });
     $(window).scroll(function () {
       var scrollPosition = $(window).scrollTop();
-      var usecasesdetailthree = $(".use-cases-detail-three").offset().top;
+      var usecasesdetailthree = $(
+        ".use-cases-detail-three .use-cases-detail-inner"
+      ).offset().top;
       if (scrollPosition >= usecasesdetailthree) {
-        $(".use-cases-video iframe").attr(
-          "src",
-          "https://player.vimeo.com/video/691347158?h=fadc7a41d0&autoplay=1&loop=1&title=0&byline=0&portrait=0"
-        );
+        $(".use-cases-video-four").removeClass("d-none");
+        $(".use-cases-video-three").addClass("d-none");
+      } else {
+        $(".use-cases-video-four").addClass("d-none");
       }
     });
-    $(window).scroll(function () {
-      var scrollPosition = $(window).scrollTop();
-      var usecasesdetailfour = $(".use-cases-detail-four-divider").offset().top;
-      if (scrollPosition >= usecasesdetailfour) {
-        $(".use-cases-video iframe").attr(
-          "src",
-          "https://player.vimeo.com/video/691440025?h=dbcbf05828&autoplay=1&loop=1&title=0&byline=0&portrait=0"
-        );
-      }
+    this.$nextTick(function () {
+      setTimeout(function () {
+        var hash = "#" + window.location.hash.substring(1);
+        const data = $(hash);
+        console.log("data", data);
+        $("html, body").animate({
+          scrollTop: $(data).position().top,
+        });
+      }, 100);
     });
   },
 };

@@ -1307,6 +1307,17 @@ export default {
       $(".map-box-bottom .map-box-inner img").removeClass("map-selected");
       $(".map-box-bottom .map-box-inner .japan-map").addClass("map-selected");
     });
+
+    this.$nextTick(function () {
+      setTimeout(function () {
+        var hash = "#" + window.location.hash.substring(1);
+        const data = $(hash);
+        console.log("data", data);
+        $("html, body").animate({
+          scrollTop: $(data).position().top,
+        });
+      }, 100);
+    });
   },
 };
 </script>
