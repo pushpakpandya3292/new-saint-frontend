@@ -91,7 +91,7 @@
                   />
                   <div class="member-detail">
                     <h4>Miika Pera</h4>
-                    <h6>Miika Pera</h6>
+                    <h6>CEO</h6>
                   </div>
                 </div>
               </div>
@@ -103,7 +103,7 @@
                   />
                   <div class="member-detail">
                     <h4>Joao Seabra</h4>
-                    <h6>Joao Seabra</h6>
+                    <h6>Head of product</h6>
                   </div>
                 </div>
               </div>
@@ -115,7 +115,19 @@
                   />
                   <div class="member-detail">
                     <h4>Stephan Weiss</h4>
-                    <h6>Stephan Weiss</h6>
+                    <h6>Head of Sales</h6>
+                  </div>
+                </div>
+              </div>
+              <div class="team-member-box-outer">
+                <div class="team-member-box">
+                  <img
+                    src="../assets/image/team-member-5.png"
+                    alt="team-member"
+                  />
+                  <div class="member-detail">
+                    <h4>Alexandre Borghi</h4>
+                    <h6>Head of AI</h6>
                   </div>
                 </div>
               </div>
@@ -127,14 +139,14 @@
                   />
                   <div class="member-detail">
                     <h4>Amrit Dinesh</h4>
-                    <h6>Amrit Dinesh</h6>
+                    <h6>Technical Support</h6>
                   </div>
                 </div>
               </div>
               <div class="team-member-box-outer">
                 <div class="team-member-box">
                   <img
-                    src="../assets/image/team-member-5.png"
+                    src="../assets/image/team-member-6.png"
                     alt="team-member"
                   />
                   <div class="member-detail">
