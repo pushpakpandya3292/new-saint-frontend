@@ -2577,10 +2577,10 @@ section.product-top-video-section.scroll-finish .ptvs-detail-box.ptvs-detail-box
         line-height: 43px;
     }
 
-    .member-detail h4 {
+    /* .member-detail h4 {
         font-size: 22px;
         line-height: normal;
-    }
+    } */
 
     .member-detail h6 {
         font-size: 16px;

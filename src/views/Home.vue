@@ -129,7 +129,7 @@
         </div>
       </div>
     </section>
-    <section class="trusted-by-section">
+    <!-- <section class="trusted-by-section">
       <div class="trusted-by-section-inner">
         <div class="container">
           <div class="row">
@@ -161,7 +161,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <section class="robust-video-section">
       <video
         autoplay=""

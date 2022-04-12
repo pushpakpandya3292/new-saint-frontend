@@ -86,7 +86,7 @@
               <div class="team-member-box-outer">
                 <div class="team-member-box">
                   <img
-                    src="../assets/image/team-member.png"
+                    src="../assets/image/team-member-1.png"
                     alt="team-member"
                   />
                   <div class="member-detail">
@@ -98,7 +98,7 @@
               <div class="team-member-box-outer">
                 <div class="team-member-box">
                   <img
-                    src="../assets/image/team-member.png"
+                    src="../assets/image/team-member-2.png"
                     alt="team-member"
                   />
                   <div class="member-detail">
@@ -110,7 +110,7 @@
               <div class="team-member-box-outer">
                 <div class="team-member-box">
                   <img
-                    src="../assets/image/team-member.png"
+                    src="../assets/image/team-member-3.png"
                     alt="team-member"
                   />
                   <div class="member-detail">
@@ -122,7 +122,7 @@
               <div class="team-member-box-outer">
                 <div class="team-member-box">
                   <img
-                    src="../assets/image/team-member.png"
+                    src="../assets/image/team-member-4.png"
                     alt="team-member"
                   />
                   <div class="member-detail">
@@ -134,12 +134,12 @@
               <div class="team-member-box-outer">
                 <div class="team-member-box">
                   <img
-                    src="../assets/image/team-member.png"
+                    src="../assets/image/team-member-5.png"
                     alt="team-member"
                   />
                   <div class="member-detail">
                     <h4>Manuel Cerny</h4>
-                    <h6>Manuel Cerny</h6>
+                    <h6>Sales Europe</h6>
                   </div>
                 </div>
               </div>

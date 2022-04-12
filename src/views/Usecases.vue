@@ -82,7 +82,7 @@
         </div>
       </div>
     </section>
-    <section class="video-with-detail-section" id="object-detection-section">
+    <!-- <section class="video-with-detail-section" id="object-detection-section">
       <div class="container">
         <div class="row">
           <div class="col-lg-7">
@@ -106,7 +106,6 @@
                   allowfullscreen
                 ></iframe>
               </div>
-              <!-- <h2>Binpicking</h2> -->
             </div>
           </div>
           <div class="col-lg-5">
@@ -127,11 +126,11 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <section class="video-with-detail-section" id="kitting-section">
       <div class="container">
         <div class="row">
-          <div class="col-lg-7 order-lg-2">
+          <div class="col-lg-7">
             <h3 class="d-lg-none use-cases-title-with-video">Kitting</h3>
             <div class="use-cases-page-video">
               <div style="padding: 56.25% 0 0 0; position: relative">
@@ -153,7 +152,7 @@
               <!-- <h2>Binpicking</h2> -->
             </div>
           </div>
-          <div class="col-lg-5 order-lg-1">
+          <div class="col-lg-5">
             <div class="use-cases-page-detail">
               <h3>Kitting</h3>
               <p>
@@ -185,7 +184,7 @@
     <section class="video-with-detail-section" id="cable-handling-section">
       <div class="container">
         <div class="row">
-          <div class="col-lg-7">
+          <div class="col-lg-7 order-lg-2">
             <h3 class="d-lg-none use-cases-title-with-video">
               Cable handling and insertions
             </h3>
@@ -209,7 +208,7 @@
               <!-- <h2>Binpicking</h2> -->
             </div>
           </div>
-          <div class="col-lg-5">
+          <div class="col-lg-5 order-lg-1">
             <div class="use-cases-page-detail">
               <h3>Cable handling and insertions</h3>
               <p>
@@ -224,7 +223,7 @@
     <section class="video-with-detail-section" id="assembly-section">
       <div class="container">
         <div class="row">
-          <div class="col-lg-7 order-lg-2">
+          <div class="col-lg-7">
             <h3 class="d-lg-none use-cases-title-with-video">Assembly</h3>
             <div class="use-cases-page-video">
               <div style="padding: 56.25% 0 0 0; position: relative">
@@ -246,7 +245,7 @@
               <!-- <h2>Binpicking</h2> -->
             </div>
           </div>
-          <div class="col-lg-5 order-lg-1">
+          <div class="col-lg-5">
             <div class="use-cases-page-detail">
               <h3>Assembly</h3>
               <p>

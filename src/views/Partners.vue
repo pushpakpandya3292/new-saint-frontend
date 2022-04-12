@@ -481,6 +481,101 @@
                           </a>
                         </li>
                       </ul>
+
+                      <h6>Distributor</h6>
+                      <h4>Unchained Robotics</h4>
+                      <ul>
+                        <li>
+                          <p>
+                            <img
+                              class="collapse-minus"
+                              src="../assets/image/location_misc_pin_icon.png"
+                              alt="location_misc_pin_icon"
+                            />
+                            An der alten Synagoge, 6, 33098 Paderborn, Germany
+                          </p>
+                        </li>
+                        <li>
+                          <a href="tel:+4952515088662">
+                            <img
+                              class="collapse-minus"
+                              src="../assets/image/phone-icon.png"
+                              alt="phone-icon"
+                            />
+                            +49 5251 5088662
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="mailto:mladen.milicevic@unchainedrobotics.de"
+                          >
+                            <img
+                              class="collapse-minus"
+                              src="../assets/image/email_envelope_letter_mail_message_icon.png"
+                              alt="email_envelope_letter_mail_message_icon"
+                            />
+                            mladen.milicevic@unchainedrobotics.de
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="https://unchainedrobotics.de/"
+                            target="_blank"
+                          >
+                            <img
+                              class="collapse-minus"
+                              src="../assets/image/globe_global_internet_icon.png"
+                              alt="globe_global_internet_icon"
+                            />
+                            https://unchainedrobotics.de/
+                          </a>
+                        </li>
+                      </ul>
+
+                      <h6>Integrator (Universal Robots) Saarland</h6>
+                      <h4>Ateb GmbH</h4>
+                      <ul>
+                        <li>
+                          <p>
+                            <img
+                              class="collapse-minus"
+                              src="../assets/image/location_misc_pin_icon.png"
+                              alt="location_misc_pin_icon"
+                            />
+                            Vogelbacher Weg 119, 66424 Homburg
+                          </p>
+                        </li>
+                        <li>
+                          <a href="tel:+49068419930020">
+                            <img
+                              class="collapse-minus"
+                              src="../assets/image/phone-icon.png"
+                              alt="phone-icon"
+                            />
+                            +49(0)6841 993 0020
+                          </a>
+                        </li>
+                        <li>
+                          <a href="mailto:info@ateb.de">
+                            <img
+                              class="collapse-minus"
+                              src="../assets/image/email_envelope_letter_mail_message_icon.png"
+                              alt="email_envelope_letter_mail_message_icon"
+                            />
+                            info@ateb.de
+                          </a>
+                        </li>
+                        <li>
+                          <a href="https://www.ateb.de/" target="_blank">
+                            <img
+                              class="collapse-minus"
+                              src="../assets/image/globe_global_internet_icon.png"
+                              alt="globe_global_internet_icon"
+                            />
+                            https://www.ateb.de/
+                          </a>
+                        </li>
+                      </ul>
                     </b-collapse>
                   </div>
                   <div class="accordion-box">
