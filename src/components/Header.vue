@@ -35,6 +35,15 @@
     </div>
   </header>
 </template>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-68144383-1" /></script>
+<script>
+//  Global site tag (gtag.js) - Google Analytics 
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments)}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-68144383-1');
+</script>
 <script>
 import $ from "jquery";
 export default {
