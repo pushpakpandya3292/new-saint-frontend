@@ -26,7 +26,7 @@
               <h1>
                 <!-- <div class="page-title-opacity"></div> -->
                 <span class="page-title-opacity-text"
-                  >Automate more with intelligent Cambrian Vision</span
+                  >Automate more with Cambrian Vision</span
                 >
               </h1>
             </div>
@@ -45,10 +45,7 @@
           preload="auto"
           disablepictureinpicture=""
         >
-          <source
-            src="http://163.53.177.63/ab/VIDEO/VIDEO/homepage.mp4"
-            type="video/mp4"
-          />
+          <source src="../assets/image/homepagevideo.mp4" type="video/mp4" />
         </video>
         <!-- <div style="padding: 56.25% 0 0 0; position: relative">
           <iframe

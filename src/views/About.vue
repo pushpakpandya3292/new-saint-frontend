@@ -146,7 +146,7 @@
               <div class="team-member-box-outer">
                 <div class="team-member-box">
                   <img
-                    src="../assets/image/team-member-6.png"
+                    src="../assets/image/team-member-7.png"
                     alt="team-member"
                   />
                   <div class="member-detail">

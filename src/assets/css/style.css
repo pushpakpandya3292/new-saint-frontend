@@ -185,7 +185,7 @@ input:focus {
     min-height: 100vh;
 } */
 .page-title-image {
-    margin-top: 519px;
+    margin-top: 422px;
     line-height: 0;
     padding-bottom: 100px;
     background: #fff;
@@ -265,7 +265,7 @@ input:focus {
 }
 
 .drive-more-detail-box {
-    height: 100vh;
+    height: 50vh;
     display: flex;
     align-items: center;
 }
@@ -1967,7 +1967,7 @@ section.product-top-video-section.scroll-finish .ptvs-detail-box.ptvs-detail-box
     }
 
     .home-page .use-cases-detail {
-        min-height: 100vh;
+        min-height: 65vh;
     }
 
     .use-cases-detail.use-cases-detail-one {
@@ -2176,6 +2176,10 @@ section.product-top-video-section.scroll-finish .ptvs-detail-box.ptvs-detail-box
     .about-title h1 {
         font-size: 60px;
         line-height: normal;
+    }
+
+    .page-title:before {
+        top: -120px;
     }
 }
 

@@ -581,6 +581,76 @@
                   <div class="accordion-box">
                     <b-button
                       block
+                      v-b-toggle.accordion-4
+                      class="hungary-map-point"
+                    >
+                      Hungary
+                      <img
+                        class="collapse-plus"
+                        src="../assets/image/collapse-plus.png"
+                        alt="collapse-plus.png"
+                      />
+                      <img
+                        class="collapse-minus"
+                        src="../assets/image/collapse-minus.png"
+                        alt="collapse-minus.png"
+                      />
+                    </b-button>
+                    <b-collapse
+                      id="accordion-4"
+                      accordion="my-accordion"
+                      role="tabpanel"
+                    >
+                      <h6>Integrator (Universal Robots)</h6>
+                      <h4>REHM Hegesztéstechnika Kft.</h4>
+                      <ul>
+                        <li>
+                          <p>
+                            <img
+                              class="collapse-minus"
+                              src="../assets/image/location_misc_pin_icon.png"
+                              alt="location_misc_pin_icon"
+                            />
+                            Jászberényi út 4., Tápiószele, Pest 2766
+                            Magyarország
+                          </p>
+                        </li>
+                        <li>
+                          <a href="tel:+3653380078">
+                            <img
+                              class="collapse-minus"
+                              src="../assets/image/phone-icon.png"
+                              alt="phone-icon"
+                            />
+                            +36-53-380-078
+                          </a>
+                        </li>
+                        <li>
+                          <a href="mailto:rehm@rehm.hu">
+                            <img
+                              class="collapse-minus"
+                              src="../assets/image/email_envelope_letter_mail_message_icon.png"
+                              alt="email_envelope_letter_mail_message_icon"
+                            />
+                            rehm@rehm.hu
+                          </a>
+                        </li>
+                        <li>
+                          <a href="https://www.rehm.hu/" target="_blank">
+                            <img
+                              class="collapse-minus"
+                              src="../assets/image/globe_global_internet_icon.png"
+                              alt="globe_global_internet_icon"
+                            />
+                            https://www.rehm.hu/
+                          </a>
+                        </li>
+                      </ul>
+                    </b-collapse>
+                  </div>
+                  <div class="accordion-box">
+                    <b-button
+                      block
                       v-b-toggle.accordion-3
                       class="italy-map-point"
                     >
@@ -660,10 +730,10 @@
                   <div class="accordion-box">
                     <b-button
                       block
-                      v-b-toggle.accordion-4
-                      class="hungary-map-point"
+                      v-b-toggle.accordion-8
+                      class="poland-map-point"
                     >
-                      Hungary
+                      Poland
                       <img
                         class="collapse-plus"
                         src="../assets/image/collapse-plus.png"
@@ -676,12 +746,12 @@
                       />
                     </b-button>
                     <b-collapse
-                      id="accordion-4"
+                      id="accordion-8"
                       accordion="my-accordion"
                       role="tabpanel"
                     >
-                      <h6>Integrator (Universal Robots)</h6>
-                      <h4>REHM Hegesztéstechnika Kft.</h4>
+                      <h6>Distributor (NEURA robotics)</h6>
+                      <h4>5sAUTOMATE Sp. z o.o.</h4>
                       <ul>
                         <li>
                           <p>
@@ -690,38 +760,27 @@
                               src="../assets/image/location_misc_pin_icon.png"
                               alt="location_misc_pin_icon"
                             />
-                            Jászberényi út 4., Tápiószele, Pest 2766
-                            Magyarország
+                            Graniczna 105, 54-530 Wrocław
                           </p>
                         </li>
                         <li>
-                          <a href="tel:+3653380078">
+                          <a href="tel:+48664381356">
                             <img
                               class="collapse-minus"
                               src="../assets/image/phone-icon.png"
                               alt="phone-icon"
                             />
-                            +36-53-380-078
+                            +48 664 381 356
                           </a>
                         </li>
                         <li>
-                          <a href="mailto:rehm@rehm.hu">
+                          <a href="mailto:order@5sAUTOMATE.com">
                             <img
                               class="collapse-minus"
                               src="../assets/image/email_envelope_letter_mail_message_icon.png"
                               alt="email_envelope_letter_mail_message_icon"
                             />
-                            rehm@rehm.hu
-                          </a>
-                        </li>
-                        <li>
-                          <a href="https://www.rehm.hu/" target="_blank">
-                            <img
-                              class="collapse-minus"
-                              src="../assets/image/globe_global_internet_icon.png"
-                              alt="globe_global_internet_icon"
-                            />
-                            https://www.rehm.hu/
+                            order@5sAUTOMATE.com
                           </a>
                         </li>
                       </ul>
@@ -877,7 +936,7 @@
                   </div>
                   <div class="accordion-box">
                     <b-button block v-b-toggle.accordion-7 class="uk-map-point">
-                      UK
+                      United Kingdom
                       <img
                         class="collapse-plus"
                         src="../assets/image/collapse-plus.png"
@@ -986,65 +1045,6 @@
                               alt="globe_global_internet_icon"
                             />
                             https://www.appliedautomation.co.uk/
-                          </a>
-                        </li>
-                      </ul>
-                    </b-collapse>
-                  </div>
-                  <div class="accordion-box">
-                    <b-button
-                      block
-                      v-b-toggle.accordion-8
-                      class="poland-map-point"
-                    >
-                      Poland
-                      <img
-                        class="collapse-plus"
-                        src="../assets/image/collapse-plus.png"
-                        alt="collapse-plus.png"
-                      />
-                      <img
-                        class="collapse-minus"
-                        src="../assets/image/collapse-minus.png"
-                        alt="collapse-minus.png"
-                      />
-                    </b-button>
-                    <b-collapse
-                      id="accordion-8"
-                      accordion="my-accordion"
-                      role="tabpanel"
-                    >
-                      <h6>Distributor (NEURA robotics)</h6>
-                      <h4>5sAUTOMATE Sp. z o.o.</h4>
-                      <ul>
-                        <li>
-                          <p>
-                            <img
-                              class="collapse-minus"
-                              src="../assets/image/location_misc_pin_icon.png"
-                              alt="location_misc_pin_icon"
-                            />
-                            Graniczna 105, 54-530 Wrocław
-                          </p>
-                        </li>
-                        <li>
-                          <a href="tel:+48664381356">
-                            <img
-                              class="collapse-minus"
-                              src="../assets/image/phone-icon.png"
-                              alt="phone-icon"
-                            />
-                            +48 664 381 356
-                          </a>
-                        </li>
-                        <li>
-                          <a href="mailto:order@5sAUTOMATE.com">
-                            <img
-                              class="collapse-minus"
-                              src="../assets/image/email_envelope_letter_mail_message_icon.png"
-                              alt="email_envelope_letter_mail_message_icon"
-                            />
-                            order@5sAUTOMATE.com
                           </a>
                         </li>
                       </ul>
