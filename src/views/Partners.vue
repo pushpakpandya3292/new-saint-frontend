@@ -24,6 +24,7 @@
                       block
                       v-b-toggle.accordion-1
                       class="austria-map-point"
+                      @click="selectedCountry = 'Austria'"
                       >Austria
                       <img
                         class="collapse-plus"
@@ -139,6 +140,7 @@
                       block
                       v-b-toggle.accordion-2
                       class="germany-map-point"
+                      @click="selectedCountry = 'Germany'"
                     >
                       Germany
                       <img
@@ -583,6 +585,7 @@
                       block
                       v-b-toggle.accordion-4
                       class="hungary-map-point"
+                       @click="selectedCountry = 'Hungary'"
                     >
                       Hungary
                       <img
@@ -653,6 +656,7 @@
                       block
                       v-b-toggle.accordion-3
                       class="italy-map-point"
+                      @click="selectedCountry = 'Italy'"
                     >
                       Italy
                       <img
@@ -732,6 +736,7 @@
                       block
                       v-b-toggle.accordion-8
                       class="poland-map-point"
+                      @click="selectedCountry = 'Poland'"
                     >
                       Poland
                       <img
@@ -791,6 +796,7 @@
                       block
                       v-b-toggle.accordion-5
                       class="romania-map-point"
+                      @click="selectedCountry = 'Romania'"
                     >
                       Romania
                       <img
@@ -870,6 +876,7 @@
                       block
                       v-b-toggle.accordion-6
                       class="switzerland-map-point"
+                      @click="selectedCountry = 'Switzerland'"
                     >
                       Switzerland
                       <img
@@ -935,7 +942,7 @@
                     </b-collapse>
                   </div>
                   <div class="accordion-box">
-                    <b-button block v-b-toggle.accordion-7 class="uk-map-point">
+                    <b-button block v-b-toggle.accordion-7 class="uk-map-point" @click="selectedCountry = 'UK'">
                       United Kingdom
                       <img
                         class="collapse-plus"
@@ -1061,7 +1068,7 @@
                   class="common-map"
                   src="../assets/image/europe-map.svg"
                   alt="europe-map"
-                  :class="{'map-selected' : selectedCountry == ''}"
+                  :class="{ 'map-selected': selectedCountry == '' }"
                 />
                 <!-- <img
                   class="common-map-hover"
@@ -1073,103 +1080,131 @@
                   class="uk-map"
                   src="../assets/image/uk-map.svg"
                   alt="uk-map"
-                  :class="{'map-selected' : selectedCountry == 'UK'}"
+                  :class="{ 'map-selected': selectedCountry == 'UK' && hoverSelectedCountry == '' }"
                 />
                 <img
                   class="uk-map-hover"
                   src="../assets/image/uk-map-hover.svg"
                   alt="uk-map-hover"
-                  :class="{'map-selected':hoverSelectedCountry == 'UK'}"
+                  :class="{ 'map-selected': hoverSelectedCountry == 'UK' }"
                 />
                 <img
                   class="switzerland-map"
                   src="../assets/image/switzerland-map.svg"
                   alt="switzerland-map"
-                  :class="{'map-selected' : selectedCountry == 'Switzerland' && hoverSelectedCountry == ''}"
+                  :class="{
+                    'map-selected':
+                      selectedCountry == 'Switzerland' &&
+                      hoverSelectedCountry == '',
+                  }"
                 />
-                 <img
+                <img
                   class="switzerland-map-hover"
                   src="../assets/image/switzerland-map-hover.svg"
                   alt="switzerland-map"
-                  :class="{'map-selected':hoverSelectedCountry == 'Switzerland'}"
+                  :class="{
+                    'map-selected': hoverSelectedCountry == 'Switzerland',
+                  }"
                 />
                 <img
                   class="poland-map"
                   src="../assets/image/poland-map.svg"
                   alt="poland-map"
-                  :class="{'map-selected' : selectedCountry == 'Poland' && hoverSelectedCountry == ''}"
+                  :class="{
+                    'map-selected':
+                      selectedCountry == 'Poland' && hoverSelectedCountry == '',
+                  }"
                 />
                 <img
                   class="poland-map-hover"
                   src="../assets/image/poland-map-hover.svg"
                   alt="poland-map"
-                  :class="{'map-selected':hoverSelectedCountry == 'Poland'}"
+                  :class="{ 'map-selected': hoverSelectedCountry == 'Poland' }"
                 />
                 <img
                   class="romania-map"
                   src="../assets/image/romania-map.svg"
                   alt="romania-map"
-                  :class="{'map-selected' : selectedCountry == 'Romania' && hoverSelectedCountry == ''}"
+                  :class="{
+                    'map-selected':
+                      selectedCountry == 'Romania' &&
+                      hoverSelectedCountry == '',
+                  }"
                 />
                 <img
                   class="romania-map-hover"
                   src="../assets/image/romania-map-hover.svg"
                   alt="romania-map"
-                  :class="{'map-selected':hoverSelectedCountry == 'Romania'}"
+                  :class="{ 'map-selected': hoverSelectedCountry == 'Romania' }"
                 />
                 <img
                   class="italy-map"
                   src="../assets/image/italy-map.svg"
                   alt="italy-map"
-                  :class="{'map-selected' : selectedCountry == 'Italy' && hoverSelectedCountry == ''}"
+                  :class="{
+                    'map-selected':
+                      selectedCountry == 'Italy' && hoverSelectedCountry == '',
+                  }"
                 />
                 <img
                   class="italy-map-hover"
                   src="../assets/image/italy-map-hover.svg"
                   alt="italy-map"
-                  :class="{'map-selected':hoverSelectedCountry == 'Italy'}"
+                  :class="{ 'map-selected': hoverSelectedCountry == 'Italy' }"
                 />
                 <img
                   class="hungary-map"
                   src="../assets/image/hungary-map.svg"
                   alt="hungary-map"
-                  :class="{'map-selected' : selectedCountry == 'Hungary' && hoverSelectedCountry == ''}"
+                  :class="{
+                    'map-selected':
+                      selectedCountry == 'Hungary' &&
+                      hoverSelectedCountry == '',
+                  }"
                 />
                 <img
                   class="hungary-map-hover"
                   src="../assets/image/hungary-map-hover.svg"
                   alt="hungary-map"
-                  :class="{'map-selected':hoverSelectedCountry == 'Hungary'}"
+                  :class="{ 'map-selected': hoverSelectedCountry == 'Hungary' }"
                 />
                 <img
                   class="germany-map"
                   src="../assets/image/germany-map.svg"
                   alt="germany-map"
-                  :class="{'map-selected' : selectedCountry == 'Germany' && hoverSelectedCountry == ''}"
+                  :class="{
+                    'map-selected':
+                      selectedCountry == 'Germany' &&
+                      hoverSelectedCountry == '',
+                  }"
                 />
                 <img
                   class="germany-map-hover"
                   src="../assets/image/germany-map-hover.svg"
                   alt="germany-map"
-                  :class="{'map-selected':hoverSelectedCountry == 'Germany'}"
+                  :class="{ 'map-selected': hoverSelectedCountry == 'Germany' }"
                 />
                 <img
                   class="austria-map"
                   src="../assets/image/austria-map.svg"
                   alt="austria-map"
-                  :class="{'map-selected' : selectedCountry == 'Austria' && hoverSelectedCountry == ''}"
+                  :class="{
+                    'map-selected':
+                      selectedCountry == 'Austria' &&
+                      hoverSelectedCountry == '',
+                  }"
                 />
                 <img
                   class="austria-map-hover"
                   src="../assets/image/austria-map-hover.svg"
                   alt="austria-map"
-                  :class="{'map-selected':hoverSelectedCountry == 'Austria'}"
+                  :class="{ 'map-selected': hoverSelectedCountry == 'Austria' }"
                 />
                 <img
                   class="austria-map-point map-point"
                   src="../assets/image/map-point.svg"
                   alt="map-point"
-                  @click="selectedCountry = 'Austria'"
+                  @click="selectedCountry = selectedCountry == 'Austria' ? '' : 'Austria'"
                   v-b-toggle.accordion-1
                   @mouseover="hoverSelectedCountry = 'Austria'"
                   @mouseleave="hoverSelectedCountry = ''"
@@ -1178,7 +1213,7 @@
                   class="germany-map-point map-point"
                   src="../assets/image/map-point.svg"
                   alt="map-point"
-                  @click="selectedCountry = 'Germany'"
+                  @click="selectedCountry = selectedCountry == 'Germany' ? '' : 'Germany'"
                   @mouseover="hoverSelectedCountry = 'Germany'"
                   @mouseleave="hoverSelectedCountry = ''"
                   v-b-toggle.accordion-2
@@ -1187,7 +1222,7 @@
                   class="hungary-map-point map-point"
                   src="../assets/image/map-point.svg"
                   alt="map-point"
-                  @click="selectedCountry = 'Hungary'"
+                  @click="selectedCountry = selectedCountry == 'Hungary' ? '' : 'Hungary'"
                   @mouseover="hoverSelectedCountry = 'Hungary'"
                   @mouseleave="hoverSelectedCountry = ''"
                   v-b-toggle.accordion-4
@@ -1196,7 +1231,7 @@
                   class="italy-map-point map-point"
                   src="../assets/image/map-point.svg"
                   alt="map-point"
-                  @click="selectedCountry = 'Italy'"
+                  @click="selectedCountry = selectedCountry == 'Italy' ? '' : 'Italy'"
                   @mouseover="hoverSelectedCountry = 'Italy'"
                   @mouseleave="hoverSelectedCountry = ''"
                   v-b-toggle.accordion-3
@@ -1205,7 +1240,7 @@
                   class="romania-map-point map-point"
                   src="../assets/image/map-point.svg"
                   alt="map-point"
-                  @click="selectedCountry = 'Romania'"
+                  @click="selectedCountry = selectedCountry == 'Romania' ? '' : 'Romania'"
                   @mouseover="hoverSelectedCountry = 'Romania'"
                   @mouseleave="hoverSelectedCountry = ''"
                   v-b-toggle.accordion-5
@@ -1213,7 +1248,7 @@
                 <img
                   class="switzerland-map-point map-point"
                   src="../assets/image/map-point.svg"
-                  @click="selectedCountry = 'Switzerland'"
+                  @click="selectedCountry = selectedCountry == 'Switzerland' ? '' : 'Switzerland'"
                   @mouseover="hoverSelectedCountry = 'Switzerland'"
                   @mouseleave="hoverSelectedCountry = ''"
                   alt="map-point"
@@ -1223,7 +1258,7 @@
                   class="poland-map-point map-point"
                   src="../assets/image/map-point.svg"
                   alt="map-point"
-                  @click="selectedCountry = 'Poland'"
+                  @click="selectedCountry = selectedCountry == 'Poland' ? '' : 'Poland'"
                   @mouseover="hoverSelectedCountry = 'Poland'"
                   @mouseleave="hoverSelectedCountry = ''"
                   v-b-toggle.accordion-8
@@ -1232,7 +1267,7 @@
                   class="uk-map-point map-point"
                   src="../assets/image/map-point.svg"
                   alt="map-point"
-                  @click="selectedCountry = 'UK'"
+                  @click="selectedCountry = selectedCountry == 'UK' ? '' : 'UK'"
                   @mouseover="hoverSelectedCountry = 'UK'"
                   @mouseleave="hoverSelectedCountry = ''"
                   v-b-toggle.accordion-7
@@ -1255,7 +1290,10 @@
                       block
                       v-b-toggle.accordion1-1
                       class="japan-map-point"
-                      :class="{'default-active':asiaSelectedCountry == 'Japan'}"
+                      :class="{
+                        'default-active': asiaSelectedCountry == 'Japan',
+                      }"
+                      @click="asiaSelectedCountry = 'Japan'"
                       >Japan
                       <img
                         class="collapse-plus"
@@ -1325,6 +1363,7 @@
                       block
                       v-b-toggle.accordion1-2
                       class="vietnam-map-point"
+                       @click="asiaSelectedCountry = 'Vietnam'"
                     >
                       Vietnam
                       <img
@@ -1404,31 +1443,43 @@
                   class="common-map"
                   src="../assets/image/asia-map.svg"
                   alt="asia-map"
-                  :class="{'map-selected': asiaSelectedCountry == ''}"
+                  :class="{ 'map-selected': asiaSelectedCountry == '' }"
                 />
                 <img
                   class="japan-map"
                   src="../assets/image/japan-map.svg"
                   alt="japan-map"
-                  :class="{'map-selected' : asiaSelectedCountry == 'Japan' && hoverAsiaSelectedCountry == ''}"
+                  :class="{
+                    'map-selected':
+                      asiaSelectedCountry == 'Japan' &&
+                      hoverAsiaSelectedCountry == '',
+                  }"
                 />
                 <img
                   class="japan-map-hover"
                   src="../assets/image/japan-map-hover.svg"
                   alt="japan-map"
-                  :class="{'map-selected':hoverAsiaSelectedCountry == 'Japan'}"
+                  :class="{
+                    'map-selected': hoverAsiaSelectedCountry == 'Japan',
+                  }"
                 />
                 <img
                   class="vietnam-map"
                   src="../assets/image/vietnam-map.svg"
                   alt="vietnam-map"
-                  :class="{'map-selected' : asiaSelectedCountry == 'Vietnam' && hoverAsiaSelectedCountry == ''}"
+                  :class="{
+                    'map-selected':
+                      asiaSelectedCountry == 'Vietnam' &&
+                      hoverAsiaSelectedCountry == '',
+                  }"
                 />
                 <img
                   class="vietnam-map-hover"
                   src="../assets/image/vietnam-map-hover.svg"
                   alt="vietnam-map"
-                  :class="{'map-selected':hoverAsiaSelectedCountry == 'Vietnam'}"
+                  :class="{
+                    'map-selected': hoverAsiaSelectedCountry == 'Vietnam',
+                  }"
                 />
                 <img
                   class="japan-map-point map-point"
@@ -1468,16 +1519,15 @@ export default {
     Header,
     Footer,
   },
-  data(){
+  data() {
     return {
-      selectedCountry:'Austria',
-      hoverSelectedCountry:'',
-      asiaSelectedCountry:'Japan',
-      hoverAsiaSelectedCountry:''
-    }
+      selectedCountry: "Austria",
+      hoverSelectedCountry: "",
+      asiaSelectedCountry: "Japan",
+      hoverAsiaSelectedCountry: "",
+    };
   },
   mounted() {
-
     this.$nextTick(function () {
       setTimeout(function () {
         var hash = "#" + window.location.hash.substring(1);

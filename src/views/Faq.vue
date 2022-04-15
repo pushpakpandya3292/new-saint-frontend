@@ -38,7 +38,7 @@
                   <h2>Technical</h2>
                   <div class="faq-col-box">
                     <div class="accordion" role="tablist">
-                      <div class="accordion-box">
+                      <!-- <div class="accordion-box">
                         <b-button block v-b-toggle.accordion-1
                           >What is the smallest and largest part you can pick ?
                           <img
@@ -91,7 +91,7 @@
                             Cambrian runtime software.
                           </p>
                         </b-collapse>
-                      </div>
+                      </div> -->
                       <div class="accordion-box">
                         <b-button block v-b-toggle.accordion-3>
                           Question

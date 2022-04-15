@@ -265,7 +265,7 @@ input:focus {
 }
 
 .drive-more-detail-box {
-    height: 50vh;
+    height: 500px;
     display: flex;
     align-items: center;
 }
@@ -1283,6 +1283,10 @@ input:focus {
     filter: brightness(0) invert(1);
 }
 
+.map-box-inner .map-point.not-collapsed:hover {
+    filter: none;
+}
+
 .map-box-inner .italy-map-point.map-point {
     bottom: 119px;
     left: 225px;
@@ -1977,8 +1981,16 @@ section.product-top-video-section.scroll-finish .ptvs-detail-box.ptvs-detail-box
         z-index: 1;
     }
 
+    .drive-more-detail-box:first-child {
+        padding-top: 300px;
+    }
+
+    .drive-more-detail-box:last-child {
+        padding-bottom: 300px;
+    }
+
     .home-page .use-cases-detail {
-        min-height: 65vh;
+        min-height: 45vh;
     }
 
     .use-cases-detail.use-cases-detail-one {
@@ -1986,7 +1998,7 @@ section.product-top-video-section.scroll-finish .ptvs-detail-box.ptvs-detail-box
     }
 
     .home-page .use-cases-detail.use-cases-detail-one {
-        min-height: 61vh;
+        min-height: 25vh;
     }
 
     .use-cases-detail.use-cases-detail-four {
@@ -1994,7 +2006,7 @@ section.product-top-video-section.scroll-finish .ptvs-detail-box.ptvs-detail-box
     }
 
     .home-page .use-cases-detail.use-cases-detail-four {
-        min-height: 60vh;
+        min-height: 25vh;
     }
 
     /* .use-cases-right-inner.end-video-scroll-outer {
@@ -2062,12 +2074,17 @@ section.product-top-video-section.scroll-finish .ptvs-detail-box.ptvs-detail-box
     }
 }
 
-.default-active{color: #000 !important;}
+.default-active {
+    color: #000 !important;
+}
 
 @media only screen and (min-width: 1200px) {
     .video-with-detail-section .container {
         max-width: calc(100% - 200px);
     }
+
+
+
 }
 
 @media only screen and (max-width: 1300px) {
@@ -2088,7 +2105,7 @@ section.product-top-video-section.scroll-finish .ptvs-detail-box.ptvs-detail-box
     }
 
     .page-title-image {
-        margin-top: 438px;
+        margin-top: 368px;
     }
 
     .hiw-detail-wrap-box {

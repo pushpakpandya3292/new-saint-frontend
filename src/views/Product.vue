@@ -27,7 +27,7 @@
           disablepictureinpicture=""
         >
           <source
-            src="http://163.53.177.63/ab/VIDEO/VIDEO/wide_rangeofparts.mp4"
+            src="../assets/image/wide_rangeofparts.mp4"
             type="video/mp4"
           />
         </video>
@@ -59,7 +59,7 @@
           disablepictureinpicture=""
         >
           <source
-            src="http://163.53.177.63/ab/VIDEO/VIDEO/wide_rangeofparts.mp4"
+            src="../assets/image/wide_rangeofparts.mp4"
             type="video/mp4"
           />
         </video>
@@ -91,7 +91,7 @@
           disablepictureinpicture=""
         >
           <source
-            src="http://163.53.177.63/ab/VIDEO/VIDEO/cambrian_is_robust_for_changing_light_conditions.mp4"
+            src="../assets/image/cambrian_is_robust_for_changing_light_conditions.mp4"
             type="video/mp4"
           />
         </video>
@@ -122,10 +122,7 @@
           preload="auto"
           disablepictureinpicture=""
         >
-          <source
-            src="http://163.53.177.63/ab/VIDEO/VIDEO/speed.mp4"
-            type="video/mp4"
-          />
+          <source src="../assets/image/speed.mp4" type="video/mp4" />
         </video>
         <!-- <div style="padding: 56.25% 0 0 0; position: relative">
           <iframe
@@ -154,10 +151,7 @@
           preload="auto"
           disablepictureinpicture=""
         >
-          <source
-            src="http://163.53.177.63/ab/VIDEO/VIDEO/accuracy.mp4"
-            type="video/mp4"
-          />
+          <source src="../assets/image/accuracy.mp4" type="video/mp4" />
         </video>
         <!-- <div style="padding: 56.25% 0 0 0; position: relative">
           <iframe
