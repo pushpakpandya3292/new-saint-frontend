@@ -17,6 +17,11 @@ Vue.use(IconsPlugin)
 
 Vue.config.productionTip = false
 
+router.beforeEach((toRoute, fromRoute, next) => {
+  window.document.title = toRoute.meta && toRoute.meta.title ? toRoute.meta.title : 'Home';
+  next();
+})
+
 new Vue({
   router,
   store,

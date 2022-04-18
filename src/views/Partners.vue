@@ -1068,7 +1068,7 @@
                   class="common-map"
                   src="../assets/image/europe-map.svg"
                   alt="europe-map"
-                  :class="{ 'map-selected': selectedCountry == '' }"
+                  :class="{ 'map-selected': selectedCountry == '' && hoverSelectedCountry == '' }"
                 />
                 <!-- <img
                   class="common-map-hover"

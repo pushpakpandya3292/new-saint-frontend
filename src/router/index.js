@@ -8,32 +8,50 @@ const routes = [
   {
     path: '/',
     name: 'Home',
-    component: Home
+    component: Home,
+    meta: {
+            title:'Home - Cambrian'
+          }
   },
   {
     path: '/faq',
     name: 'Faq',
-    component: () => import('../views/Faq.vue')
+    component: () => import('../views/Faq.vue'),
+    meta: {
+            title:'FAQ - Cambrian'
+          }
   },
   {
     path: '/about',
     name: 'About',
-    component: () => import('../views/About.vue')
+    component: () => import('../views/About.vue'),
+    meta: {
+            title:'About - Cambrian'
+          }
   },
   {
     path: '/partners',
     name: 'Partners',
-    component: () => import('../views/Partners.vue')
+    component: () => import('../views/Partners.vue'),
+    meta: {
+            title:'Partners - Cambrian'
+          }
   },
   {
     path: '/usecases',
     name: 'Usecases',
-    component: () => import('../views/Usecases.vue')
+    component: () => import('../views/Usecases.vue'),
+    meta: {
+            title:'Usecases - Cambrian'
+          }
   },
   {
     path: '/product',
     name: 'Product',
-    component: () => import('../views/Product.vue')
+    component: () => import('../views/Product.vue'),
+    meta: {
+            title:'Products - Cambrian'
+          }
   },
 
 ]
