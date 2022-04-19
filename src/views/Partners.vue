@@ -43,7 +43,7 @@
                       role="tabpanel"
                     >
                       <h6>Distributor (Universal Robots)</h6>
-                      <h4>Schmactl GmbH</h4>
+                      <h4>Schmachtl GmbH</h4>
                       <ul>
                         <li>
                           <p>
