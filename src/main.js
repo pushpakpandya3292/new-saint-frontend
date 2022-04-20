@@ -4,6 +4,7 @@ import router from './router'
 import store from './store'
 
 import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
+import VueAnalytics from 'vue-analytics';
 
 // Import Bootstrap an BootstrapVue CSS files (order is important)
 import 'bootstrap/dist/css/bootstrap.css'
@@ -14,7 +15,10 @@ import '../src/assets/js/custom.js'
 Vue.use(BootstrapVue)
 // Optionally install the BootstrapVue icon components plugin
 Vue.use(IconsPlugin)
-
+Vue.use(VueAnalytics, {
+  id: 'UA-68144383-1',
+  router
+});
 Vue.config.productionTip = false
 
 router.beforeEach((toRoute, fromRoute, next) => {
