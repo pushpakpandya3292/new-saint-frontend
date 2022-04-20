@@ -27,7 +27,7 @@
           disablepictureinpicture=""
         >
           <source
-            src="../assets/image/wide_rangeofparts.mp4"
+            src="../assets/image/wide_rangeofparts1.mp4"
             type="video/mp4"
           />
         </video>
@@ -59,7 +59,7 @@
           disablepictureinpicture=""
         >
           <source
-            src="../assets/image/wide_rangeofparts.mp4"
+            src="../assets/image/wide_rangeofparts1.mp4"
             type="video/mp4"
           />
         </video>
