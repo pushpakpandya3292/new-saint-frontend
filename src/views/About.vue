@@ -44,7 +44,7 @@
                 disablepictureinpicture=""
               >
                 <source
-                  src="https://www.caint.io/img/website_01v.mp4"
+                  src="../assets/image/website_01v.mp4"
                   type="video/mp4"
                 />
               </video>
