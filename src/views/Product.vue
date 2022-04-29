@@ -560,7 +560,7 @@
           <div class="row m-0 align-items-center">
             <div class="col-lg-7 p-0">
               <div class="hiws-video">
-                <div class="hiws-video-inner">
+                <div class="hiws-video-inner active-video-for-first">
                   <!-- <video
                     autoplay=""
                     loop=""
@@ -575,9 +575,50 @@
                       type="video/mp4"
                     />
                   </video> -->
-                  <div style="padding: 56.25% 0 0 0; position: relative">
+                  <div
+                    class="hiws-video-one"
+                    style="padding: 56.25% 0 0 0; position: relative"
+                  >
+                    <iframe
+                      src="https://player.vimeo.com/video/701644450?h=3f97f352c0&autoplay=1&loop=1&title=0&byline=0&portrait=0&muted=1"
+                      muted
+                      style="
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                      "
+                      frameborder="0"
+                      allow="fullscreen; picture-in-picture"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                  <div
+                    class="hiws-video-two"
+                    style="padding: 56.25% 0 0 0; position: relative"
+                  >
                     <iframe
                       src="https://player.vimeo.com/video/691374811?h=61daac380b&autoplay=1&loop=1&title=0&byline=0&portrait=0&muted=1"
+                      muted
+                      style="
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                      "
+                      frameborder="0"
+                      allow="fullscreen; picture-in-picture"
+                      allowfullscreen
+                    ></iframe>
+                  </div>
+                  <div
+                    class="hiws-video-three"
+                    style="padding: 56.25% 0 0 0; position: relative"
+                  >
+                    <iframe
+                      src="https://player.vimeo.com/video/700892729?h=9fdd011fcb&autoplay=1&loop=1&title=0&byline=0&portrait=0&muted=1"
                       muted
                       style="
                         position: absolute;
@@ -598,7 +639,10 @@
               <div class="how-it-work-collapse">
                 <div class="accordion" role="tablist">
                   <div class="accordion-box">
-                    <b-button block v-b-toggle.accordion-1
+                    <b-button
+                      class="for-workflow-one"
+                      block
+                      v-b-toggle.accordion-1
                       ><span>01</span> Define pick points
                     </b-button>
                     <b-collapse
@@ -614,7 +658,11 @@
                     </b-collapse>
                   </div>
                   <div class="accordion-box">
-                    <b-button block v-b-toggle.accordion-2>
+                    <b-button
+                      block
+                      class="for-workflow-two"
+                      v-b-toggle.accordion-2
+                    >
                       <span>02</span> AI training
                     </b-button>
                     <b-collapse
@@ -631,7 +679,11 @@
                     </b-collapse>
                   </div>
                   <div class="accordion-box">
-                    <b-button block v-b-toggle.accordion-3>
+                    <b-button
+                      class="for-workflow-three"
+                      block
+                      v-b-toggle.accordion-3
+                    >
                       <span>03</span> Operate
                     </b-button>
                     <b-collapse
@@ -1051,6 +1103,21 @@ export default {
     //     $(".use-cases-detail-image-three").addClass("d-none");
     //   }
     // });
+    $(".for-workflow-one").click(function () {
+      $(".hiws-video-inner").addClass("active-video-for-first");
+      $(".hiws-video-inner").removeClass("active-video-for-second");
+      $(".hiws-video-inner").removeClass("active-video-for-third");
+    });
+    $(".for-workflow-two").click(function () {
+      $(".hiws-video-inner").removeClass("active-video-for-first");
+      $(".hiws-video-inner").addClass("active-video-for-second");
+      $(".hiws-video-inner").removeClass("active-video-for-third");
+    });
+    $(".for-workflow-three").click(function () {
+      $(".hiws-video-inner").removeClass("active-video-for-first");
+      $(".hiws-video-inner").removeClass("active-video-for-second");
+      $(".hiws-video-inner").addClass("active-video-for-third");
+    });
   },
 };
 </script>

@@ -1262,6 +1262,11 @@ input:focus {
 .map-box-inner .map-point {
     width: 15px;
     position: absolute;
+    filter: brightness(100) invert(1);
+}
+
+.map-box-inner .map-point.other-map-hoved {
+    filter: none !important;
 }
 
 .map-box-inner .map-point.austria-map-point {
@@ -1965,12 +1970,45 @@ section.product-top-video-section.scroll-finish .ptvs-detail-box.ptvs-detail-box
     position: absolute;
 }
 
+
+.map-box-inner .map-point.not-collapsed {
+    pointer-events: none;
+}
+
+.active-video-for-first .hiws-video-two,
+.active-video-for-first .hiws-video-three {
+    display: none;
+}
+
+.active-video-for-first .hiws-video-one {
+    display: block;
+}
+
+.active-video-for-second .hiws-video-one,
+.active-video-for-second .hiws-video-three {
+    display: none;
+}
+
+.active-video-for-second .hiws-video-two {
+    display: block;
+}
+
+.active-video-for-third .hiws-video-one,
+.active-video-for-third .hiws-video-two {
+    display: none;
+}
+
+.active-video-for-third .hiws-video-third {
+    display: block;
+}
+
 /***********************************/
 @media only screen and (min-height: 1081px) {
-/* .drive-more-img:before {
+    /* .drive-more-img:before {
     content: none !important;
 } */
 }
+
 @media only screen and (min-width: 992px) {
     .drive-more-img {
         text-align: center;
