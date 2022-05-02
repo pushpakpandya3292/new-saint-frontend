@@ -656,7 +656,7 @@
                       block
                       v-b-toggle.accordion-3
                       class="italy-map-point"
-                      @click="selectedCountry = 'Italy'"
+                      @click="selectedCountry != 'Italy' ? selectedCountry = 'Italy' : selectedCountry = ''"
                     >
                       Italy
                       <img
@@ -1493,7 +1493,7 @@
                   class="japan-map-point map-point"
                   src="../assets/image/map-point.svg"
                   alt="map-point"
-                  :class="{'other-asia-map-hoved' : hoverAsiaSelectedCountry != '' && hoverAsiaSelectedCountry != 'Japan' && asiaSelectedCountry == 'Japan'}"
+                  :class="{'other-map-hoved' : hoverAsiaSelectedCountry != '' && hoverAsiaSelectedCountry != 'Japan' && asiaSelectedCountry == 'Japan'}"
                   v-b-toggle.accordion1-1
                   @click="asiaSelectedCountry = 'Japan'"
                   @mouseover="hoverAsiaSelectedCountry = 'Japan'"
@@ -1503,7 +1503,7 @@
                   class="vietnam-map-point map-point"
                   src="../assets/image/map-point.svg"
                   alt="map-point"
-                  :class="{'other-asia-map-hoved' : hoverAsiaSelectedCountry != '' && hoverAsiaSelectedCountry != 'Vietnam' && asiaSelectedCountry == 'Vietnam'}"
+                  :class="{'other-map-hoved' : hoverAsiaSelectedCountry != '' && hoverAsiaSelectedCountry != 'Vietnam' && asiaSelectedCountry == 'Vietnam'}"
                   v-b-toggle.accordion1-2
                   @click="asiaSelectedCountry = 'Vietnam'"
                   @mouseover="hoverAsiaSelectedCountry = 'Vietnam'"
