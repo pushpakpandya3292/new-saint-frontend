@@ -215,6 +215,11 @@
                 Cambrian Vision is well suited for various cable insertion and
                 handling applications
               </p>
+              <a href="/faq"
+                >See general questions/ answers about Assembly<img
+                  src="../assets/image/contact-us-arrow-big.png"
+                  alt="contact-us-arrow"
+              /></a>
             </div>
           </div>
         </div>

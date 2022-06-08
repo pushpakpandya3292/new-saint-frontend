@@ -3052,10 +3052,10 @@ section.product-top-video-section.scroll-finish .ptvs-detail-box.ptvs-detail-box
         line-height: 51px;
     }
 
-    .header-section {
+    /* .header-section {
         position: relative;
         border: none !important;
-    }
+    } */
 
     .contact-us-btn {
         display: none;
@@ -3225,10 +3225,10 @@ section.product-top-video-section.scroll-finish .ptvs-detail-box.ptvs-detail-box
         z-index: 11;
         position: absolute;
         right: 0;
-        left: 0;
         top: calc(100% + 15px);
         background: #7E5AF6;
         border-radius: 10px;
+        width: 50%;
     }
 
     .header-menu .navbar {

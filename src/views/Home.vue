@@ -70,9 +70,9 @@
     <section class="drive-more-section">
       <div class="drive-more-title-left">
         <h2>
-          <p>Reduce costs, drive&nbsp;</p>
-          <p>more revenues, end&nbsp;</p>
-          <p>labour bottlenecks</p>
+          <p>Reduce costs, &nbsp;</p>
+          <p>Drive more revenues &nbsp;</p>
+          <p>End labour bottlenecks</p>
         </h2>
       </div>
       <div class="drive-more-section-inner" id="drive-more-img">
@@ -89,37 +89,36 @@
             <div class="drive-more-detail-box">
               <div class="drive-more-detail-box-inner">
                 <h4>Be resilient for changing environment</h4>
-                <p>
-                  Robots don’t get Covid. Bring low-cost production back to
-                  mainland.
-                </p>
+                <p>Robots don’t get Covid.</p>
                 <p>Avert global supply chain issues.</p>
+                <p>Bring low-cost production back to mainland.</p>
               </div>
             </div>
             <div class="drive-more-detail-box">
               <div class="drive-more-detail-box-inner">
                 <h4>Improve quality</h4>
                 <p>
-                  Cambrian Vision system doesn’t get tired and is more accurate
-                  than workers.
+                  Cambrian Vision doesn’t get tired and is consistently
+                  accurate.
                 </p>
               </div>
             </div>
             <div class="drive-more-detail-box">
               <div class="drive-more-detail-box-inner">
-                <h4>Free workforce for other tasks</h4>
+                <h4>Free workforce for more productive tasks</h4>
                 <p>
-                  While AI enhanced robots are doing the most mundane tasks you
-                  can have workers to do more productive tasks Avert labour
-                  shortages.
+                  While AI enhanced robots perform the most mundane tasks,
+                  workers are freed for more productive taks.
                 </p>
               </div>
             </div>
             <div class="drive-more-detail-box drive-more-detail-box-last">
               <div class="drive-more-detail-box-inner">
                 <h4>Reduce costs</h4>
-                <p>A robot arm with Cambrian Vision system can do many tasks</p>
-                <p>at a lower cost than a worker.</p>
+                <p>
+                  A robot arm equipped with Cambrian Vision can do many tasks
+                  24/7, at a lower cost than any alternative.
+                </p>
               </div>
             </div>
           </div>

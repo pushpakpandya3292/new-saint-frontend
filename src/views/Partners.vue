@@ -578,6 +578,51 @@
                           </a>
                         </li>
                       </ul>
+
+                      <h6>Integrator (Universal Robots) Hessen</h6>
+                      <h4>Willich Elektrotechnik GmbH</h4>
+                      <ul>
+                        <li>
+                          <p>
+                            <img
+                              class="collapse-minus"
+                              src="../assets/image/location_misc_pin_icon.png"
+                              alt="location_misc_pin_icon"
+                            />
+                            Kerschensteinerstraße 15, 36179 Bebra
+                          </p>
+                        </li>
+                        <li>
+                          <a href="tel:+490662292770">
+                            <img
+                              class="collapse-minus"
+                              src="../assets/image/phone-icon.png"
+                              alt="phone-icon"
+                            />
+                            +49 (0)6622 9277-0
+                          </a>
+                        </li>
+                        <li>
+                          <a href="mailto:posteingang@willich.de">
+                            <img
+                              class="collapse-minus"
+                              src="../assets/image/email_envelope_letter_mail_message_icon.png"
+                              alt="email_envelope_letter_mail_message_icon"
+                            />
+                            posteingang@willich.de
+                          </a>
+                        </li>
+                        <li>
+                          <a href="https://www.willich.de/" target="_blank">
+                            <img
+                              class="collapse-minus"
+                              src="../assets/image/globe_global_internet_icon.png"
+                              alt="globe_global_internet_icon"
+                            />
+                            https://www.willich.de/
+                          </a>
+                        </li>
+                      </ul>
                     </b-collapse>
                   </div>
                   <div class="accordion-box">
@@ -585,7 +630,7 @@
                       block
                       v-b-toggle.accordion-4
                       class="hungary-map-point"
-                       @click="selectedCountry = 'Hungary'"
+                      @click="selectedCountry = 'Hungary'"
                     >
                       Hungary
                       <img
@@ -656,7 +701,11 @@
                       block
                       v-b-toggle.accordion-3
                       class="italy-map-point"
-                      @click="selectedCountry != 'Italy' ? selectedCountry = 'Italy' : selectedCountry = ''"
+                      @click="
+                        selectedCountry != 'Italy'
+                          ? (selectedCountry = 'Italy')
+                          : (selectedCountry = '')
+                      "
                     >
                       Italy
                       <img
@@ -942,7 +991,12 @@
                     </b-collapse>
                   </div>
                   <div class="accordion-box">
-                    <b-button block v-b-toggle.accordion-7 class="uk-map-point" @click="selectedCountry = 'UK'">
+                    <b-button
+                      block
+                      v-b-toggle.accordion-7
+                      class="uk-map-point"
+                      @click="selectedCountry = 'UK'"
+                    >
                       United Kingdom
                       <img
                         class="collapse-plus"
@@ -1068,7 +1122,10 @@
                   class="common-map"
                   src="../assets/image/europe-map.svg"
                   alt="europe-map"
-                  :class="{ 'map-selected': selectedCountry == '' && hoverSelectedCountry == '' }"
+                  :class="{
+                    'map-selected':
+                      selectedCountry == '' && hoverSelectedCountry == '',
+                  }"
                 />
                 <!-- <img
                   class="common-map-hover"
@@ -1080,7 +1137,10 @@
                   class="uk-map"
                   src="../assets/image/uk-map.svg"
                   alt="uk-map"
-                  :class="{ 'map-selected': selectedCountry == 'UK' && hoverSelectedCountry == '' }"
+                  :class="{
+                    'map-selected':
+                      selectedCountry == 'UK' && hoverSelectedCountry == '',
+                  }"
                 />
                 <img
                   class="uk-map-hover"
@@ -1204,8 +1264,16 @@
                   class="austria-map-point map-point"
                   src="../assets/image/map-point.svg"
                   alt="map-point"
-                  :class="{'other-map-hoved' : hoverSelectedCountry != '' && hoverSelectedCountry != 'Austria' && selectedCountry == 'Austria'}"
-                  @click="selectedCountry = selectedCountry == 'Austria' ? '' : 'Austria'"
+                  :class="{
+                    'other-map-hoved':
+                      hoverSelectedCountry != '' &&
+                      hoverSelectedCountry != 'Austria' &&
+                      selectedCountry == 'Austria',
+                  }"
+                  @click="
+                    selectedCountry =
+                      selectedCountry == 'Austria' ? '' : 'Austria'
+                  "
                   v-b-toggle.accordion-1
                   @mouseover="hoverSelectedCountry = 'Austria'"
                   @mouseleave="hoverSelectedCountry = ''"
@@ -1214,8 +1282,16 @@
                   class="germany-map-point map-point"
                   src="../assets/image/map-point.svg"
                   alt="map-point"
-                  :class="{'other-map-hoved' : hoverSelectedCountry != '' && hoverSelectedCountry != 'Germany' && selectedCountry == 'Germany'}"
-                  @click="selectedCountry = selectedCountry == 'Germany' ? '' : 'Germany'"
+                  :class="{
+                    'other-map-hoved':
+                      hoverSelectedCountry != '' &&
+                      hoverSelectedCountry != 'Germany' &&
+                      selectedCountry == 'Germany',
+                  }"
+                  @click="
+                    selectedCountry =
+                      selectedCountry == 'Germany' ? '' : 'Germany'
+                  "
                   @mouseover="hoverSelectedCountry = 'Germany'"
                   @mouseleave="hoverSelectedCountry = ''"
                   v-b-toggle.accordion-2
@@ -1224,8 +1300,16 @@
                   class="hungary-map-point map-point"
                   src="../assets/image/map-point.svg"
                   alt="map-point"
-                  :class="{'other-map-hoved' : hoverSelectedCountry != '' && hoverSelectedCountry != 'Hungary' && selectedCountry == 'Hungary'}"
-                  @click="selectedCountry = selectedCountry == 'Hungary' ? '' : 'Hungary'"
+                  :class="{
+                    'other-map-hoved':
+                      hoverSelectedCountry != '' &&
+                      hoverSelectedCountry != 'Hungary' &&
+                      selectedCountry == 'Hungary',
+                  }"
+                  @click="
+                    selectedCountry =
+                      selectedCountry == 'Hungary' ? '' : 'Hungary'
+                  "
                   @mouseover="hoverSelectedCountry = 'Hungary'"
                   @mouseleave="hoverSelectedCountry = ''"
                   v-b-toggle.accordion-4
@@ -1234,8 +1318,15 @@
                   class="italy-map-point map-point"
                   src="../assets/image/map-point.svg"
                   alt="map-point"
-                  :class="{'other-map-hoved' : hoverSelectedCountry != '' && hoverSelectedCountry != 'Italy' && selectedCountry == 'Italy'}"
-                  @click="selectedCountry = selectedCountry == 'Italy' ? '' : 'Italy'"
+                  :class="{
+                    'other-map-hoved':
+                      hoverSelectedCountry != '' &&
+                      hoverSelectedCountry != 'Italy' &&
+                      selectedCountry == 'Italy',
+                  }"
+                  @click="
+                    selectedCountry = selectedCountry == 'Italy' ? '' : 'Italy'
+                  "
                   @mouseover="hoverSelectedCountry = 'Italy'"
                   @mouseleave="hoverSelectedCountry = ''"
                   v-b-toggle.accordion-3
@@ -1244,8 +1335,16 @@
                   class="romania-map-point map-point"
                   src="../assets/image/map-point.svg"
                   alt="map-point"
-                  :class="{'other-map-hoved' : hoverSelectedCountry != '' && hoverSelectedCountry != 'Romania' && selectedCountry == 'Romania'}"
-                  @click="selectedCountry = selectedCountry == 'Romania' ? '' : 'Romania'"
+                  :class="{
+                    'other-map-hoved':
+                      hoverSelectedCountry != '' &&
+                      hoverSelectedCountry != 'Romania' &&
+                      selectedCountry == 'Romania',
+                  }"
+                  @click="
+                    selectedCountry =
+                      selectedCountry == 'Romania' ? '' : 'Romania'
+                  "
                   @mouseover="hoverSelectedCountry = 'Romania'"
                   @mouseleave="hoverSelectedCountry = ''"
                   v-b-toggle.accordion-5
@@ -1253,19 +1352,35 @@
                 <img
                   class="switzerland-map-point map-point"
                   src="../assets/image/map-point.svg"
-                  @click="selectedCountry = selectedCountry == 'Switzerland' ? '' : 'Switzerland'"
+                  @click="
+                    selectedCountry =
+                      selectedCountry == 'Switzerland' ? '' : 'Switzerland'
+                  "
                   @mouseover="hoverSelectedCountry = 'Switzerland'"
                   @mouseleave="hoverSelectedCountry = ''"
                   alt="map-point"
-                   :class="{'other-map-hoved' : hoverSelectedCountry != '' && hoverSelectedCountry != 'Switzerland' && selectedCountry == 'Switzerland'}"
+                  :class="{
+                    'other-map-hoved':
+                      hoverSelectedCountry != '' &&
+                      hoverSelectedCountry != 'Switzerland' &&
+                      selectedCountry == 'Switzerland',
+                  }"
                   v-b-toggle.accordion-6
                 />
                 <img
                   class="poland-map-point map-point"
                   src="../assets/image/map-point.svg"
                   alt="map-point"
-                  :class="{'other-map-hoved' : hoverSelectedCountry != '' && hoverSelectedCountry != 'Poland' && selectedCountry == 'Poland'}"
-                  @click="selectedCountry = selectedCountry == 'Poland' ? '' : 'Poland'"
+                  :class="{
+                    'other-map-hoved':
+                      hoverSelectedCountry != '' &&
+                      hoverSelectedCountry != 'Poland' &&
+                      selectedCountry == 'Poland',
+                  }"
+                  @click="
+                    selectedCountry =
+                      selectedCountry == 'Poland' ? '' : 'Poland'
+                  "
                   @mouseover="hoverSelectedCountry = 'Poland'"
                   @mouseleave="hoverSelectedCountry = ''"
                   v-b-toggle.accordion-8
@@ -1274,7 +1389,12 @@
                   class="uk-map-point map-point"
                   src="../assets/image/map-point.svg"
                   alt="map-point"
-                  :class="{'other-map-hoved' : hoverSelectedCountry != '' && hoverSelectedCountry != 'UK' && selectedCountry == 'UK'}"
+                  :class="{
+                    'other-map-hoved':
+                      hoverSelectedCountry != '' &&
+                      hoverSelectedCountry != 'UK' &&
+                      selectedCountry == 'UK',
+                  }"
                   @click="selectedCountry = selectedCountry == 'UK' ? '' : 'UK'"
                   @mouseover="hoverSelectedCountry = 'UK'"
                   @mouseleave="hoverSelectedCountry = ''"
@@ -1371,7 +1491,7 @@
                       block
                       v-b-toggle.accordion1-2
                       class="vietnam-map-point"
-                       @click="asiaSelectedCountry = 'Vietnam'"
+                      @click="asiaSelectedCountry = 'Vietnam'"
                     >
                       Vietnam
                       <img
@@ -1493,7 +1613,12 @@
                   class="japan-map-point map-point"
                   src="../assets/image/map-point.svg"
                   alt="map-point"
-                  :class="{'other-map-hoved' : hoverAsiaSelectedCountry != '' && hoverAsiaSelectedCountry != 'Japan' && asiaSelectedCountry == 'Japan'}"
+                  :class="{
+                    'other-map-hoved':
+                      hoverAsiaSelectedCountry != '' &&
+                      hoverAsiaSelectedCountry != 'Japan' &&
+                      asiaSelectedCountry == 'Japan',
+                  }"
                   v-b-toggle.accordion1-1
                   @click="asiaSelectedCountry = 'Japan'"
                   @mouseover="hoverAsiaSelectedCountry = 'Japan'"
@@ -1503,7 +1628,12 @@
                   class="vietnam-map-point map-point"
                   src="../assets/image/map-point.svg"
                   alt="map-point"
-                  :class="{'other-map-hoved' : hoverAsiaSelectedCountry != '' && hoverAsiaSelectedCountry != 'Vietnam' && asiaSelectedCountry == 'Vietnam'}"
+                  :class="{
+                    'other-map-hoved':
+                      hoverAsiaSelectedCountry != '' &&
+                      hoverAsiaSelectedCountry != 'Vietnam' &&
+                      asiaSelectedCountry == 'Vietnam',
+                  }"
                   v-b-toggle.accordion1-2
                   @click="asiaSelectedCountry = 'Vietnam'"
                   @mouseover="hoverAsiaSelectedCountry = 'Vietnam'"
