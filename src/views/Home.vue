@@ -70,7 +70,7 @@
     <section class="drive-more-section">
       <div class="drive-more-title-left">
         <h2>
-          <p>Reduce costs, &nbsp;</p>
+          <p>Reduce costs &nbsp;</p>
           <p>Drive more revenues &nbsp;</p>
           <p>End labour bottlenecks</p>
         </h2>
@@ -108,7 +108,7 @@
                 <h4>Free workforce for more productive tasks</h4>
                 <p>
                   While AI enhanced robots perform the most mundane tasks,
-                  workers are freed for more productive taks.
+                  workers are freed for more productive tasks.
                 </p>
               </div>
             </div>

@@ -821,7 +821,7 @@
                     alt="cambrian-vision-system"
                   />
                   <p>
-                    <b>Cambrian Vision System was developed for</b>
+                    <b>Cambrian Vision was developed for</b>
                     cost-efficient, fast and robust binpicking, pick and place,
                     machine feeding, feature location, assembly, supermarket,
                     warehouse logistics and other automation and manufacturing
