@@ -480,7 +480,7 @@
               <div class="how-it-work-cms-mobile-box">
                 <div style="padding: 56.25% 0 0 0; position: relative">
                   <iframe
-                    src="https://player.vimeo.com/video/691374811?h=61daac380b&autoplay=1&loop=1&title=0&byline=0&portrait=0&muted=1"
+                    src="https://player.vimeo.com/video/701644450?h=61daac380b&autoplay=1&loop=1&title=0&byline=0&portrait=0&muted=1"
                     muted
                     style="
                       position: absolute;
@@ -529,7 +529,7 @@
               <div class="how-it-work-cms-mobile-box">
                 <div style="padding: 56.25% 0 0 0; position: relative">
                   <iframe
-                    src="https://player.vimeo.com/video/691374811?h=61daac380b&autoplay=1&loop=1&title=0&byline=0&portrait=0&muted=1"
+                    src="https://player.vimeo.com/video/700892729?h=61daac380b&autoplay=1&loop=1&title=0&byline=0&portrait=0&muted=1"
                     muted
                     style="
                       position: absolute;
