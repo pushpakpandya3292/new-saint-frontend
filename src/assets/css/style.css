@@ -1206,6 +1206,7 @@ input:focus {
 .map-box-inner .common-map,
 .map-box-inner .japan-map,
 .map-box-inner .vietnam-map,
+.map-box-inner .india-map,
 .map-box-inner .uk-map-hover,
 .map-box-inner .poland-map-hover,
 .map-box-inner .switzerland-map-hover,
@@ -1216,12 +1217,18 @@ input:focus {
 .map-box-inner .austria-map-hover,
 .map-box-inner .common-map-hover,
 .map-box-inner .japan-map-hover,
-.map-box-inner .vietnam-map-hover {
+.map-box-inner .vietnam-map-hover,
+.map-box-inner .india-map-hover {
     position: absolute;
     top: 0;
     left: 0;
     opacity: 0;
     visibility: hidden;
+}
+
+.map-box-inner .india-map-point.map-point{
+    bottom: 121px;
+    left: 160px;
 }
 
 .map-box-inner .vietnam-map-point.map-point {
@@ -2209,6 +2216,10 @@ section.product-top-video-section.scroll-finish .ptvs-detail-box.ptvs-detail-box
     .map-box-inner .vietnam-map-point.map-point {
         bottom: 70px;
         left: 245px;
+    }
+    .map-box-inner .india-map-point.map-point {
+        bottom: 100px;
+        left: 134px;
     }
 
     .trusted-by-title h2 {

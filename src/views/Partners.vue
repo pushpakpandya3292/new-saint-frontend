@@ -1560,6 +1560,78 @@
                       </ul>
                     </b-collapse>
                   </div>
+                  <div class="accordion-box">
+                    <b-button
+                      block
+                      v-b-toggle.accordion1-3
+                      class="india-map-point"
+                      :class="{
+                        'default-active': asiaSelectedCountry == 'India',
+                      }"
+                      @click="asiaSelectedCountry = 'India'"
+                      >India
+                      <img
+                        class="collapse-plus"
+                        src="../assets/image/collapse-plus.png"
+                        alt="collapse-plus.png"
+                      />
+                      <img
+                        class="collapse-minus"
+                        src="../assets/image/collapse-minus.png"
+                        alt="collapse-minus.png"
+                      />
+                    </b-button>
+                    <b-collapse
+                      id="accordion1-3"
+                      accordion="my-accordion2"
+                      role="tabpanel"
+                    >
+                      <h6>Distributor</h6>
+                      <h4>Variety Innovation Venture</h4>
+                      <ul>
+                        <li>
+                          <p>
+                            <img
+                              class="collapse-minus"
+                              src="../assets/image/location_misc_pin_icon.png"
+                              alt="location_misc_pin_icon"
+                            />
+                            619, Ground Floor, Phase V, Sector 19, Udyog Vihar, Gurugram, Haryana, 122016, India
+                          </p>
+                        </li>
+                        <li>
+                          <a href="tel:+919999421242">
+                            <img
+                              class="collapse-minus"
+                              src="../assets/image/phone-icon.png"
+                              alt="phone-icon"
+                            />
+                            +91 9999421242
+                          </a>
+                        </li>
+                        <li>
+                          <a href="mailto:info@varietyinnovation.com">
+                            <img
+                              class="collapse-minus"
+                              src="../assets/image/email_envelope_letter_mail_message_icon.png"
+                              alt="email_envelope_letter_mail_message_icon"
+                            />
+                           info@varietyinnovation.com
+                          </a>
+                        </li>
+                        <li>
+                          <a href="https://www.varietyinnovation.com/" target="_blank">
+                            <img
+                              class="collapse-minus"
+                              src="../assets/image/globe_global_internet_icon.png"
+                              alt="globe_global_internet_icon"
+                            />
+                            https://www.varietyinnovation.com/
+                          </a>
+                        </li>
+                      </ul>
+                    </b-collapse>
+                  </div>
                 </div>
               </div>
             </div>
@@ -1610,6 +1682,24 @@
                   }"
                 />
                 <img
+                  class="india-map"
+                  src="../assets/image/india-map.svg"
+                  alt="India-map"
+                  :class="{
+                    'map-selected':
+                      asiaSelectedCountry == 'India' &&
+                      hoverAsiaSelectedCountry == '',
+                  }"
+                />
+                <img
+                  class="india-map-hover"
+                  src="../assets/image/india-map-hover.svg"
+                  alt="India-map"
+                  :class="{
+                    'map-selected': hoverAsiaSelectedCountry == 'India',
+                  }"
+                />
+                <img
                   class="japan-map-point map-point"
                   src="../assets/image/map-point.svg"
                   alt="map-point"
@@ -1637,6 +1727,21 @@
                   v-b-toggle.accordion1-2
                   @click="asiaSelectedCountry = 'Vietnam'"
                   @mouseover="hoverAsiaSelectedCountry = 'Vietnam'"
+                  @mouseleave="hoverAsiaSelectedCountry = ''"
+                />
+                <img
+                  class="india-map-point map-point"
+                  src="../assets/image/map-point.svg"
+                  alt="map-point"
+                  :class="{
+                    'other-map-hoved':
+                      hoverAsiaSelectedCountry != '' &&
+                      hoverAsiaSelectedCountry != 'India' &&
+                      asiaSelectedCountry == 'India',
+                  }"
+                  v-b-toggle.accordion1-3
+                  @click="asiaSelectedCountry = 'India'"
+                  @mouseover="hoverAsiaSelectedCountry = 'India'"
                   @mouseleave="hoverAsiaSelectedCountry = ''"
                 />
               </div>
